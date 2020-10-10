@@ -1,0 +1,378 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>巴黎时装秀-首页</title>
+<script type="text/javascript" src="http://down.hovertree.com/jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" language="javascript">
+    $(document).ready(function () {
+        $("#btn_center").click(function () {
+            popCenterWindow();
+        });
+    }); 
+</script> 
+<script type="text/javascript">
+function time(){
+	var dt=new Date();
+	var year=dt.getFullYear();
+	var month=dt.getMonth()+1;
+	var date=dt.getDate();
+	var hour=dt.getHours();
+	var minute=dt.getMinutes();
+	var second=dt.getSeconds();
+document.getElementById("start").innerHTML="Today\(^o^)/~"+"<br>"+year+"年"+fn(month)+"月"+fn(date)+"日"+"<br>"+fn(hour)+":"+fn(minute)+":"+fn(second);
+};
+setInterval("time()",1000);
+function fn(str){
+	var num;
+	if(str>9){num=str;}
+	else{num="0"+str;}
+	return num;
+	}
+</script>
+<style type="text/css">
+	*{margin:0px;padding:0px;}
+	#one,#mid2,#two,#four,#five,#six,#seven,#bottom,#footer{width:100%;margin:0px auto;}
+#one{width:100%;height:1080px;background-image:url("../巴黎时装秀/image/首页/1.jpg");}
+	#top{height:100px;}
+		.logo{width:100px;float:left;}
+		.title{width:1599px;font-family:黑体;font-size:70px;font-style:oblique;color:#FFF;text-align:center;padding-top:20px;padding-bottom:20px;float:left;}
+		.t{width:200px;height:100px;text-align:center;float:right}
+		.t p{font-family:华文楷体;font-size:25px;color:#333;text-align:center;}
+	#nav{height:60px;}
+	#box{box-sizing:border-box;width:400px;padding-top:10px;padding-left:40px;height:60px;margin:0px auto;padding:0px auto;float:left;}
+		.search1{width:300px;height:30px;border-radius:2em;border-right:none;padding-left:10px;float:left}
+		.search2{width:30px;height:30px;margin-top:1px;float:left;margin-left:-15px;border:none}
+	#dl{width:200px; height:60px;float:right; line-height:60px;text-align:center}
+	.login{width:360px;height:456px;border:6px #666 solid; position:absolute; left:800px; top:100px;background-image:url("../巴黎时装秀/image/首页/3.jpg");display:none;}
+	.login .close{width:30px;height:30px;float:right;}
+	.login .close img{float:right;}
+	.login .d{font-size:26px;font-family:微软雅黑;color:#333;text-align:center}
+	.login .loginCon{width:260px;height:300px;margin:0 auto;border-bottom:1px #000 solid}
+	.loginCon p{font-size:16px;color:#666;font-family:微软雅黑;height:40px;line-height:40px;}
+	.loginCon p .txt{width:250px;height:40px; border:1px #111 solid;padding-left:10px;}
+	.loginCon .but{margin-top:10px}
+	.loginCon .but input{width:260px;height:40px;background:#000;border:none;color:#FFF;font-size:20px;font-family:微软雅黑;}
+	.loginCon p a{ text-decoration:none; color:#666;}
+	.loginCon .txt2{ text-align:center;}
+	.kj{height:90px;line-height:60px; margin-top:10px}
+	/*#nav ul{height:60px;list-style:none;}
+	#nav ul li{height:60px;float:right;}
+	#nav ul li a{display:block;width:60px;height:60px;color:#FFF;line-height:60px;font-size:20px;text-decoration:none;}
+	#nav ul li a:hover{color:#F90}*/
+	#mid1{height:600px;}
+	#banner{margin-left:100px;width:800px;height:600px;overflow:hidden;}
+	#banner div{width:4800px;height:600px;animation:playimg 9s linear infinite;}
+	#banner div:hover{animation-play-state:paused;}
+	#banner div img{width:800px;height:600px;float:left;}
+	/*动画关键帧的集合*/
+	@keyframes playimg{0%,15%{margin-left:0px;}
+						20%,35%{margin-left:-800px;}
+						40%,55%{margin-left:-1600px;}
+						60%,75%{margin-left:-2400px;}
+						80%,95%{margin-left:-3200px;}
+						99%,100%{margin-left:-4000px;}}
+#three{width:100%;height:100%;background-image:url("../巴黎时装秀/image/首页/2.jpg");background-attachment:fixed}
+#two{height:520px;}
+	.two_left{width:50%;height:600px;float:left;margin-top:-120px}
+	.two_right{width:50%;height:600px;float:left;margin-top:-120px}
+	.two_right1{width:100%;height:315px;float:left}
+	.two_right2{width:100%;height:285px;float:left}
+	#mid2{height:560px}
+		.a1{float:left}
+		.a2{float:right}
+			#mid2 h1{font-family:华文行楷;font-size:60px;text-align:center;}
+			#mid2 p{font-family:华文行楷;font-size:25px;text-indent:2em;}
+#four{height:1250px;}
+#four_one{width:33%;height:600px;float:left;}
+#four_two{width:33%;height:600px;float:left}
+#four_three{width:34%;height:600px;float:left;}
+#four_four{width:33%;height:600px;float:left;margin-top:50px}
+#four_five{width:33%;height:600px;float:left;margin-top:50px}
+#four_six{width:34%;height:600px;float:left;margin-top:50px}
+	.four{position: relative;width:600px;height:450px;margin:0 auto}
+	.four .img img{position: relative;width:600px;height:450px;max-width:100%;}
+	.four .title1{width:600px;height:150px;background-image:url("../巴黎时装秀/image/首页/3.jpg")}
+	.four .info{position: absolute;top:0;bottom:0;left:0;right:0;text-align:center;-webkit-backface-visibility:hidden;backface-visibility: hidden;background: rgba(0, 0, 0, 0.7);opacity:0;-webkit-transition: all 0.35s ease-in-out;-moz-transition: all 0.35s ease-in-out;transition: all 0.35s ease-in-out;color:#FFF;font-size:20px;}
+	.four a:hover .info{opacity: 1;}
+	.four .title1 h1{font-family:华文行楷;color:#000;font-size:40px;text-align:center;}
+	.four .title1 p{font-family:华文行楷;color:#333;font-size:25px;text-align:center;}
+#bottom{height:160px;}
+	.bottom1{width:50%;height:100px;float:left}
+	.bottom1_one{width:160px;height:40px;margin-top:60px;float:right;margin-right:200px;border:1px #000 solid;background-image:url("../巴黎时装秀/image/首页/3.jpg");text-align:center;}
+	.bottom1_one a{font-family:华文楷体;font-size:30px;color:#000;text-align:center;}
+	.bottom2_one a{font-family:华文楷体;font-size:30px;color:#000;text-align:center;}
+	.bottom2{width:50%;height:100px;float:left}
+	.bottom2_one{width:160px;height:40px;margin-top:60px;float:left;margin-left:150px;border:1px #000 solid;background-image:url("../巴黎时装秀/image/首页/3.jpg");text-align:center;}
+	.bottom1_one a{font-family:华文楷体;font-size:30px;color:#000;text-align:center;text-decoration:none;}
+	.bottom2_one a{font-family:华文楷体;font-size:30px;color:#000;text-align:center;text-decoration:none;}
+#six{height:180px;}
+	#six h1{font-family:华文行楷;font-size:60px;text-align:center;}
+#seven{height:180px;}
+	#seven h1{font-family:华文行楷;font-size:60px;text-align:center;}
+
+#five{width:1539px;height:1350px;margin:0 auto;border-top:10px #FFF dashed}
+	#five h1{font-family:华文楷体;font-size:25px;color:#000;text-align:center;}
+	#five p{font-size:16px;color:#333;text-indent:2em;}
+	#five a{text-decoration:none;}
+	.five1{width:425px;height:600px;border:#FFF 10px solid;float:left;}
+	.five1_one{width:425px;height:425px;overflow: hidden;}			
+	.five1_one img{cursor:pointer;transition:all 0.6s;}
+	.five1_one img:hover{transform:scale(1.4);}
+	
+	.five2{width:609px;height:600px;border:#FFF 10px solid;float:left;margin-left:10px;}
+	.yi{width:609px;height:368px;float:left;}
+	.five2_one{width:609px;height:224px;overflow: hidden;}			
+	.five2_one img{cursor:pointer;transition:all 0.6s;}
+	.five2_one img:hover{transform:scale(1.4);}
+	.er{width:609px;height:222px;float:left;border-top:#FFF 10px solid;}
+	.five2_two{width:609px;height:222px;overflow: hidden;}			
+	.five2_two img{cursor:pointer;transition:all 0.6s;}
+	.five2_two img:hover{transform:scale(1.4);}
+	
+	.five3{width:425px;height:600px;border:#FFF 10px solid;float:left;margin-left:10px;}
+	.five3_one{width:425px;height:425px;overflow: hidden;}			
+	.five3_one img{cursor:pointer;transition:all 0.6s;}
+	.five3_one img:hover{transform:scale(1.4);}
+	
+	.five4{width:725px;height:650px;border:#FFF 10px solid;float:left;margin-top:10px;}
+	.left{width:425px;height:650px;float:left;}
+	.five4_one{width:425px;height:425px;overflow: hidden;}			
+	.five4_one img{cursor:pointer;transition:all 0.6s;}
+	.five4_one img:hover{transform:scale(1.4);}
+	.right{width:300px;height:650px;float:right;}
+		
+	.five5{width:764px;height:650px;border:#FFF 10px solid;float:left;margin-top:10px;margin-left:10px;}
+	.five5_one{width:764px;height:509px;overflow: hidden;}			
+	.five5_one img{cursor:pointer;transition:all 0.6s;}
+	.five5_one img:hover{transform:scale(1.4);}
+
+	#footer{margin:0px auto;padding:0px;width:100%;height:400px;background-color:#333;overflow:hidden}
+	#footer p{color:#FFF;font-size:18px;}
+	.foot1{width:49%;height:300px;float:left;border-right:1px #000 solid;text-align:center;color:#FFF;font-size:18px;}
+	.foot2{width:49%;height:300px;float:left;border-left:1px #000 solid;color:#FFF;font-size:18px;}
+		.foot2 ul{list-style:none;width:100%;height:100px;overflow:hidden;}
+		.foot2 li{float:left;display:block;}
+		.foot2 a{display:block;text-decoration:none;color:#000;width:120px;height:25px;text-align:center;margin-top:70px;font-size:18px;margin-left:10px;				color:#FFF}
+		.foot2 a:hover{color:#F90}
+	.foot3{width:100%;height:100px;text-align:center;float:left;color:#FFF}
+</style>
+</head>
+
+<body onload="time()">
+<div id="one">
+<div id="top">
+	<div class="logo"><a href="首页.html"><img src="../巴黎时装秀/image/首页/logo.png"></a></div>
+	<div class="title">Paris Fashion Show</div>
+    <div class="t"><marquee direction="right" loop="-1" behavior="scroll" width="160px" height="100px" scrolldelay="360"><p id="start"></p></marquee></div>
+</div>
+
+<div id="nav">
+	<div id="box">
+		<form action="">
+        <div class="search1">
+    		<input type="text"  class="search1" style="outline:none;" placeholder="您想知道什么呢？(⊙o⊙)…"></div>
+        <div class="search2">
+            <input type="submit" class="search2" style="background:url(../巴黎时装秀/image/首页/search2.jpg); outline:none;" value="" ></div>
+    	</form>
+    </div>
+    <div id="dl" style="cursor:pointer">
+    <input type="button" value="Login" id="btn_center" style="background:none; border:none; font-size:26px; color:#FFF; line-height:50px; text-align:center;border-style:none; outline:none";/> 
+    </div>
+    <div class="login" id="center">
+	<div class="close"><img src="../巴黎时装秀/image/首页/1.png" alt="关闭"/></div>
+    <div style="clear:both"></div>
+    <p class="d">登录PFS</p>
+        <div class="loginCon">
+        <form>
+        <p>账号</p>
+        <p><input type="text" class="txt"/></p>
+        <p>密码</p>
+        <p><input type="text" class="txt"/></p>
+        <p><input type="checkbox" value="0"/>下次自动登录</p>
+        <p class="but"><input type="submit" value="登&emsp;录"/></p>
+        <p class="txt2"><a href="">忘记密码</a>&emsp;&emsp;<a href="注册.html" target="_blank">创建账号</a></p>
+        </form>
+        </div>
+     <div class="kj">
+     <p style=" font-size:20px; font-family:微软雅黑; color:#666; float:left;">快捷登录</p>
+     <div style="float:left">&emsp;<a href="" class="vx" title="微信账号登录"><img src="../巴黎时装秀/image/首页/vx.png"></a>&emsp;<a href="" class="xl" title="新浪账号登录"><img src="../巴黎时装秀/image/首页/xl.png"></a>&emsp;<a href="" class="qq" title="QQ账号登录"><img src="../巴黎时装秀/image/首页/qq.png"></a></div>
+     </div>
+</div>
+
+ 
+<script type="text/javascript">
+  //获取窗口的高度 
+var windowHeight; 
+//获取窗口的宽度 
+var windowWidth; 
+//获取弹窗的宽度 
+var popWidth; 
+//获取弹窗高度 
+var popHeight; 
+function init(){ 
+   windowHeight=$(window).height(); 
+   windowWidth=$(window).width(); 
+   popHeight=$(".login").height(); 
+   popWidth=$(".login").width(); 
+} 
+//关闭窗口的方法 
+function closeWindow(){ 
+    $(".close img").click(function(){ 
+        $(this).parent().parent().hide("slow"); 
+        }); 
+    } 
+		//定义弹出居中窗口的方法 
+		function popCenterWindow(){ 
+			init(); 
+			//计算弹出窗口的左上角Y的偏移量 
+		var popY=(windowHeight-popHeight)/2; 
+		var popX=(windowWidth-popWidth)/2; 
+		//设定窗口的位置 
+		$("#center").css("top",popY).css("left",popX).slideToggle("slow");  
+		closeWindow(); 
+		}
+</script> 
+</div>
+</div>
+<div id="three">
+<div id="two">
+	<div class="two_left">
+    <div id="mid1">
+	<div id="banner">
+		<div>
+    		<img src="image/首页/playimg1.jpg">
+        	<img src="image/首页/playimg2.jpg">
+    		<img src="image/首页/playimg3.jpg">
+        	<img src="image/首页/playimg4.jpg">
+        	<img src="image/首页/playimg5.jpg">
+        	<img src="image/首页/playimg1.jpg">
+   	 	</div>
+	</div>
+   </div>
+    </div>
+    <div class="two_right">
+    <div class="two_right1">
+    <img src="../巴黎时装秀/image/首页/one.jpg">&emsp;&emsp;&emsp;
+    <img src="../巴黎时装秀/image/首页/two.jpg"></div>
+    <div class="two_right2">
+    <img src="../巴黎时装秀/image/首页/three.jpg">&emsp;&emsp;&emsp;
+    <img src="../巴黎时装秀/image/首页/four.jpg"></div>
+    </div>
+</div>
+
+<div id="mid2">
+	<br><br><h1>Fashion &emsp;is&emsp; everywhere</h1><br><br><hr>
+	<div class="a1"><img src="../巴黎时装秀/image/首页/3.gif"></div><br>
+	<p>在信息爆炸、审美多元化的当下，时尚恍如众人追逐的泡沫，它光彩、但易	幻灭，有人想要预测下一轮备受宠爱的所谓时尚，也有人试图引领新的潮流。</p><br>
+    <div class="a2"><img src="../巴黎时装秀/image/首页/4.gif"></div>
+	<p>然而，在时装秀上，那些令人眼前一亮的或复古、或未来的新设计宣示着：</p><br>
+    <p align="center" >时&emsp;尚</p><br><p align="center">只需着眼当下的欣喜，</p><br><p align="center">再顺其自然地迎接下一轮惊喜，</p><br><p align="center">你无需预测，更无需刻意引领！</p></p>
+</div>
+<div id="six"><br><br><br><h1>You need out of the ordinary, but can not be replaced.</h1></div>
+<div id="five">
+<div class="five1">
+<a href="http://fashion.bazaar.com.cn/2018/1011/273430.shtml" target="_blank">
+<div class="five1_one"><img src="image/首页/一.jpg"></div>
+<h1>画壁 • 一眼千年|萃华再次亮相巴黎时装周，国潮又美出新高度</h1></a>
+<p>将中国元素与珠宝艺术紧密结合，让民族品牌与文化领潮全球时尚。巴黎时间9月28日16：00，中华老字号品牌萃华珠宝再次携手Heaven Gaia亮相2019巴黎时装周，举办“画壁 • 一眼千年”春夏大秀。</p>
+</div>
+<div class="five2">
+<a href="http://fashion.bazaar.com.cn/2019/0117/277036.shtml" target="_blank">
+<div class="yi">
+<div class="five2_one"><img src="image/首页/二.png"></div>
+<h1>Gucci 发布2019早秋系列</h1></a>
+<p>古驰2019早秋系列延续了创作总监亚力山卓·米开理（Alessandro Michele）一贯的的摩登美学，品牌标志性元素融合当代街头潮流，浓郁丰富的色彩充满活力，多元的构成标志着米开理正在以更加开放的叙事方式诠释衣着的无限可能性。不同元素间的混搭更为张扬瞩目，经典的双G印花，年轻化的格纹，充满梦幻色彩的花卉图案，装点在三件套印花西装上，赋予了每个造型独一无二的个性。</p></div>
+<a href="http://fashion.bazaar.com.cn/2019/0117/277036.shtml" target="_blank">
+<div class="er"><div class="five2_one"><img src="image/首页/六.png"></a></div></div>
+</div>
+<div class="five3">
+<a href="http://fashion.bazaar.com.cn/2019/0114/276855.shtml" target="_blank">
+<div class="five3_one"><img src="image/首页/三.jpg"></div>
+<h1>超模也疯狂！时装周开幕前X小时大玩集体失踪，到地铁车厢开派对！</h1></a>
+<p>麻豆们在登上2019哈尔滨时装周T台前的X小时在干嘛？秀场后台不见她们的身影竟然集体玩失踪？！在经过了全城大搜索后终于在冰城某站的地铁车厢发现了她们的身影！她们竟然在开（蹦）派（野）对（迪）！</p>
+</div>
+<div class="five4">
+<div class="left">
+<a href="http://fashion.bazaar.com.cn/2018/0419/263977.shtml" target="_blank">
+<div class="five4_one"><img src="image/首页/四.jpg"></div>
+<h1>“狮”牌联袂 策“响”时尚</h1></a>
+<p>李宁-太平鸟相继登上纽约国际时装周、安踏在美国被排队抢购，都只因中国元素渐渐成为全球时尚界的重要标签，现象回归本源，就是设计的原创和坚守、专注与创新，2018年，中国石狮国际时装周再出发。作为“闽派服饰”的时尚策源地，在“创新转型、实业强市”的城市发展战略下，中国石狮国际时装周以挖掘设计人才为己任，发现院校新星为动力、展现区域产业魅力为目标，打造“融合共享区域产业特色”“整合全国原创设计资源”的创新时尚舞台。</p></div>
+<div class="right"><p>中国石狮国际时装周开幕秀将第一次出现本土品牌的联合秀，而且集聚了目前石狮服装最具代表性和影响力的品牌，而且覆盖商务男装、时尚潮装、女装、童装等多个领域。季季乐，“中国十大童装”品牌，国内童装“快时尚”模式的缔造者，是国内在台湾地区门店数量最多的童装品牌；爱登堡，“闽派服饰”的代表品牌，常年荣获权威媒体评选的“中国十大男装品牌”称号，其二十多年始终如一的“英伦风”赢得了众多簇拥者；金苑，福建女装品牌的代表，其设计总监洪美璇荣获中国服装“十佳设计师”称号，成为淑女装以及职业装的集大成者；斯得雅，经过数次转型，成功迈入了当下最火的服系—时尚潮服，成为中国本土潮服品牌的重要力量。四个品牌，各具特色、各有千秋，其联袂演奏的“四重唱”将再现石狮品牌的多元魅力。</p><p>服装之根本，就是设计，品牌的PK，也在于设计，石狮被称为“孕育金顶奖设计师、十佳设计师的沃土”，培养了计文波、杨紫明、曾凤飞、陈闻、刘勇等国内服装设计界的名师，卡宾、七匹狼、爱登堡、利郎等“闽派服饰”领军品牌的成长和壮大和上述名师有着密切关联。对于石狮设计来说，要做的就是不断寻找下一个“中国金顶设计师”和“中国十佳服装设计师”。</p></div>
+</div>
+<div class="five5">
+<a href="http://fashion.bazaar.com.cn/2019/0430/280688.shtml" target="_blank">
+<div class="five5_one"><img src="image/首页/五.jpg"></div>
+<h1>曼妮芬x AWAYLEE | 原创设计缔造性感与时尚</h1></a>
+<p>3月29日，国内“知名内衣品牌曼妮芬Maniform”首次亮相2019秋冬上海时装周，携手年轻人喜欢的Awaylee品牌以「香港香港」为主题，带来一场集结新一季全球首发、内衣外搭的潮流港风大秀。</p>
+<P>曼妮芬坚持“你，生而性感”的品牌理念，坚信每一位女性都拥有天然且独一无二的性感基因，倡导现代女性“自然、自信、自我表达”的性感价值观，践行舒适、功能与美学平衡的高品质生活方式。</P>
+</div>
+</div>
+<div id="seven"><br><br><br><h1>Fashion, style forever.</h1></div>
+
+<div id="four">
+<div id="four_one"><div class="four">   
+             <a href="流行分析.html" target="_blank">
+                <div class="img"><img src="../巴黎时装秀/image/首页/流行分析.jpg" alt="img"></div>
+                <div class="info"><br><h1>流行分析</h1><br><p>有依据，够全面</p><br><p>解析全球潮流动向、独到国内市场观察</p></div>
+             </a>
+             <div class="title1"><h1>流行分析</h1><br><p>有依据，够全面</p><p>解析全球潮流动向、独到国内市场观察</p></div>
+</div></div>
+<div id="four_two"><div class="four">   
+             <a href="T台.html" target="_blank">
+                <div class="img"><img src="../巴黎时装秀/image/首页/T台SHOW.jpg" alt="img"></div>
+                <div class="info"><br><h1>T台秀</h1><br><p>看现场，品牌全</p><br><p>秀场动态时时同步，特色款式精选提炼</p></div>
+             </a>
+             <div class="title1"><h1>T台秀</h1><br><p>看现场，品牌全</p><p>秀场动态时时同步，特色款式精选提炼</p></div>
+</div></div>
+<div id="four_three"><div class="four">   
+             <a href="读物.html" target="_blank">
+                <div class="img"><img src="../巴黎时装秀/image/首页/时尚刊物.jpg" alt="img"></div>
+                <div class="info"><br><h1>时尚刊物</h1><br><p>趋势链，助设计</p><br><p>从色彩、单品、到快反系列</p></div>
+             </a>
+             <div class="title1"><h1>时尚刊物</h1><br><p>趋势链，助设计</p><p>从色彩、单品、到快反系列</p></div>
+</div></div>
+<div id="four_four"><div class="four">   
+             <a href="#" target="_blank">
+                <div class="img"><img src="../巴黎时装秀/image/首页/面料.jpg" alt="img"></div>
+                <div class="info"><br><h1>面料</h1><br><p>多维度，指方向</p><br><p>汇集国内外热门面料素材</p></div>
+             </a>
+             <div class="title1"><h1>面料</h1><br><p>多维度，指方向</p><p>汇集国内外热门面料素材</p></div>
+</div></div>
+<div id="four_five"><div class="four">   
+             <a href="智能设计.html" target="_blank">
+                <div class="img"><img src="../巴黎时装秀/image/首页/智能设计.jpg" alt="img"></div>
+                <div class="info"><br><h1>智能设计</h1><br><p>高智能，易使用</p><br><p>智能设计工具、虚拟样衣识别</p></div>
+             </a>
+             <div class="title1"><h1>智能设计</h1><br><p>高智能，易使用</p><p>智能设计工具、虚拟样衣识别</p></div>
+</div></div>
+<div id="four_six"><div class="four">   
+             <a href="#" target="_blank">
+                <div class="img"><img src="../巴黎时装秀/image/首页/款式.jpg" alt="img"></div>
+                <div class="info"><br><h1>款式</h1><br><p>零时差，无国界</p><br><p>实时更新款式资讯，全面汇聚流行单品</p></div>
+             </a>
+             <div class="title1"><h1>款式</h1><br><p>零时差，无国界</p><p>实时更新款式资讯，全面汇聚流行单品</p></div>
+</div></div>
+</div>
+<div id="bottom">
+<div class="bottom1"><div class="bottom1_one"><a href="注册.html" target="_blank">咨询VIP</a></div></div>
+<div class="bottom2"><div class="bottom2_one"><a href="关于我们.html" target="_blank">了解我们</a></div></div>				
+</div>
+
+</div>
+<div id="footer">
+	<div class="foot1"><br><br><br><p>Paris Fashion Show</p><br><p>客服电话：17784470338</p><br><p>邮箱：2513868605@qq.com</p></div>
+	<div class="foot2">
+    <ul>
+    <li><a>&emsp;友情链接：</a></li>
+    <li><a href="http://www.bazaar.com.cn/" target="_blank">时尚芭莎</a></li>
+    <li><a href="http://www.ilovelook.cn/index.html" target="_blank">LOOK</a></li>
+    <li><a href="http://www.yoka.com/dna/224/845/index.html" target="_blank">YOKA</a></li>
+    <li><a href="http://www.pop-fashion.com/" target="_blank">POP服装趋势</a></li>
+    </ul>
+    <br><p>&emsp;&emsp;关于PFS：&emsp;&emsp;&emsp;简介&emsp;&emsp;&emsp;发展历程&emsp;&emsp;&emsp;团队&emsp;&emsp;&emsp;合作伙伴</p>
+    <br><p>&emsp;&emsp;商业合作：&emsp;&emsp;品牌合作&emsp;&emsp;&emsp;PFS合作&emsp;&emsp;&emsp;媒体合作</p>
+    </div>
+	<div class="foot3"><br><p>版权所有 © 2019 Paris Fashion Show（巴黎时装秀.个人网站） .YH</p><br><p>ICP 号: 京 A1-20190501(虚拟)</p></div>
+</div></body>
+</html>

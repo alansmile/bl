@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>注册</title>
+<!--
+    JavaScript校验要求：
+    1.每一项都必须填写内容或者做出选择，不能存在空项；+++++++++
+
+
+    2.用户名：只能包含英文字母和下划线，长度为6-18个字符；++++++++
+
+    3.密码：必须包含英文字母大小写和数字，长度不能少于6个字符；++++++
+    4.确认密码：必须与密码相同；
+
+
+    5.联系电话：确保手机号码的有效性；+++++++++
+    6.电子邮箱：确保电子邮箱的有效性；+++++++++
+
+    7.如果用户没有按照以上要求输入信息，则当光标离开该项时，在该项的右侧用红色字体给出相应的提示信息。++++++
+-->
+<script type="text/javascript">
+//    用户名
+    function YHMonblus(){
+        var username=document.getElementById("username");
+        var re = /^[a-zA-Z_]{6,18}$/;
+        if(username.value==""){
+            document.getElementById('YHMerror').innerText="请输入用户名";
+        }
+        else if(username.value.length < 6 ||username.value.length > 18){
+            console.log(username.value);
+            document.getElementById('YHMerror').innerText="格式错误,长度应为6-18个字符";
+        }
+        else if(!re.test(username.value)){
+
+            document.getElementById('YHMerror').innerText="格式错误,只能包含英文字母和下划线";
+        }
+        else {
+            document.getElementById('YHMerror').innerText ="";
+        }
+    }
+    function YHMonfocu(){
+            document.getElementById('YHMerror').innerText ="";
+    }
+//   密码
+    function MMonblus(){
+          var password=document.getElementById("password");
+          var re = /^(?=.*\d)(?=.*[a-zA-Z])[\da-zA-Z]{6,}$/;
+
+        if(password.value==""){
+        document.getElementById('MMerror').innerText="请输入密码";
+        }
+          else if(password.value.length < 6){
+             document.getElementById('MMerror').innerText="格式错误,,密码长度至少为6位";
+         }
+
+         else if(!re.test(password.value)){
+             document.getElementById('MMerror').innerText="格式错误,必须包含英文字母和数字";
+        }
+         else {
+        document.getElementById('MMerror').innerText ="";
+        }
+}
+    function MMonfocu(){
+        document.getElementById('MMerror').innerText ="";
+    }
+
+//    确认密码
+    function QRMMonblus(){
+        var password=document.getElementById("password");
+        var confirmPassword=document.getElementById("confirmPassword");
+        if(confirmPassword.value==""){
+            document.getElementById('QRMMerror').innerText="请输入确认密码";
+        }
+        else if(password.value != confirmPassword.value){
+            document.getElementById('QRMMerror').innerText="两次密码输入不一致";
+        }
+        else {
+            document.getElementById('QRMMerror').innerText ="";
+        }
+    }
+    function QRMMonfocu(){
+        document.getElementById('QRMMerror').innerText ="";
+    }
+	
+//    联系电话
+    function LXDHonblus(){
+        var phone=document.getElementById("phone");
+        var re =/^1[123456789]\d{9}$/;
+        if(phone.value==""){
+            document.getElementById('LXDHerror').innerText="请输入联系电话";
+        }
+        else if(!re.test(phone.value)){
+            document.getElementById('LXDHerror').innerText="电话格式输入错误";
+        }
+        else {
+            document.getElementById('LXDHerror').innerText ="";
+        }
+    }
+    function LXDHonfocu(){
+        document.getElementById('LXDHerror').innerText ="";
+    }
+//    电子邮箱
+    function DZYXonblus(){
+        var email=document.getElementById("email");
+        var re= /[a-zA-Z0-9]{1,10}@[a-zA-Z0-9]{1,5}\.[a-zA-Z0-9]{1,5}/;
+        if(email.value==""){
+            document.getElementById('DZYXerror').innerText="请输入电子邮箱";
+        }
+        else if(!re.test(email.value)){
+            document.getElementById("DZYXerror").innerHTML="邮箱格式不正确";
+        }
+        else {
+            document.getElementById('DZYXerror').innerText ="";
+        }
+    }
+    function DZYXonfocu(){
+        document.getElementById('DZYXerror').innerText ="";
+    }
+</script>
+<style type="text/css">
+*{margin:0px;padding:0px;}
+#top,#nav,#mid,#footer{width:100%;margin:0px auto;}
+#top{height:100px;background-color:#003}
+	.logo{float:left;}
+	.title{font-family:黑体;font-size:60px;color:#CCC;text-align:center;padding-top:20px;padding-bottom:20px;}
+#nav{height:60px;background-color:#003;}
+
+	#nav ul{height:60px;list-style:none;}
+	#nav ul li {height:60px;float:right;}
+	#nav ul li a{display:block;height:60px;color:#FFF;line-height:60px;font-size:20px;padding:0 60px;text-decoration:none;}
+#mid{height:1080px;background-image:url("../巴黎时装秀/image/注册/1.jpg");}
+	#left{margin:0px auto;padding:0px auto;width:50%;height:600px;background:none;display:inline-block;margin-top:100px;float:left;}
+		.left1{float:left}
+		.left1 p{padding-left:50px;font-size:50px;text-align:center;color:#FFF}
+	#zhuce{width:600px;height:600px;display:inline-block;float:right;padding:20px;margin-top:100px;margin-right:200px;}
+    .bd{
+        padding:10px 0;font-family:幼圆;font-size:16px;
+    }
+    .bd label{
+        display: inline-block;
+        width: 64px;
+        margin-right:10px;
+        
+    }
+    .bd span{
+        color:#F00;
+        font-size:14px
+    }
+    .inputText{
+        display:inline-block;
+        width:260px;
+		height:30px;
+        margin-right:10px;
+    }
+	.bd a{text-decoration:none;color:#06C}
+#footer{margin:0px auto;padding:0px;width:100%;height:400px;background-color:#333;overflow:hidden}
+	#footer p{color:#FFF;font-size:18px;}
+	.foot1{width:49%;height:300px;float:left;border-right:1px #000 solid;text-align:center;color:#FFF;font-size:18px;}
+	.foot2{width:49%;height:300px;float:left;border-left:1px #000 solid;color:#FFF;font-size:18px;}
+		.foot2 ul{list-style:none;width:100%;height:100px;overflow:hidden;}
+		.foot2 li{float:left;display:block;}
+		.foot2 a{display:block;text-decoration:none;color:#000;width:120px;height:25px;text-align:center;margin-top:70px;font-size:18px;margin-left:10px;				color:#FFF}
+	.foot3{width:100%;height:100px;text-align:center;float:left;color:#FFF}
+</style>
+</head>
+
+<body>
+<div id="top">
+	<div class="logo"><img src="../巴黎时装秀/image/首页/logo.png"></div>
+	<div class="title">Paris Fashion Show</div>
+</div>
+
+<div id="nav">
+	<ul>
+        <li><a href="首页.html">返回首页</a></li>
+        <li><a>注册遇到问题？</a></li>
+        <li><a>咨询VIP服务</a></li>
+        <li><a>研发资源</a></li>
+        <li><a href="智能设计.html" target="_blank">智能设计</a></li>
+        <li><a href="T台.html" target="_blank">模特T台</a></li>
+        <li><a href="读物.html" target="_blank">杂志刊物</a></li>
+        <li><a href="流行分析.html" target="_blank">流行分析</a></li>
+        <li><a>设计工具</a></li>
+    </ul>
+</div>
+
+<div id="mid">
+<div id="left">
+		<div class="left1"><img src="../巴黎时装秀/image/注册/2.jpg"></div>
+		<div class="left1 p"><p>欢</p> <p>迎</p> <p>注</p> <p>册</p> <br><br> <p>P</p> <p>F</p> <p>S</p></div>
+</div>
+<div id="zhuce">
+<form method="" action="" name="frm">
+    <div class="bd">
+        <label>用户名</label>
+        <input type="text" id="username" class="inputText" placeholder="6-18个字符，只能包含英文字母和下划线" onfocus="YHMonfocu()" onblur="YHMonblus()" />
+        <span id="YHMerror">
+        </span>
+    </div>
+
+    <div class="bd">
+        <label>密码</label>
+        <input type="password" id="password" class="inputText" placeholder="不少于6个字符，必须包含英文字母和数字" onfocus="MMonfocu()" onblur="MMonblus()"/>
+        <span id="MMerror">
+        </span>
+    </div>
+    <div class="bd">
+        <label>确认密码</label>
+        <input type="password" id="confirmPassword" class="inputText" placeholder="确认密码相一致" onfocus="QRMMonfocu()" onblur="QRMMonblus()"/>
+        <span id="QRMMerror">
+        </span>
+    </div>
+    <div class="bd">
+        <label>联系电话</label>
+        <input type="text" id="phone" class="inputText" placeholder="确保手机号码的有效性" onfocus="LXDHonfocu()" onblur="LXDHonblus()"/>
+        <span id="LXDHerror">
+        </span>
+    </div>
+    <div class="bd">
+        <label>电子邮箱</label>
+        <input type="email" id="email" class="inputText" placeholder="确保电子邮箱的有效性" onfocus="DZYXonfocu()" onblur="DZYXonblus()"/>
+        <span id="DZYXerror">
+        </span>
+    </div>
+    
+    <div class="bd">
+    	<input type="checkbox" value="0"/>我已阅读并接受PFS <a href="">服务条款</a> & <a href="">隐私政策</a>  
+    </div>
+    <div class="bd">
+    	<input type="submit" value="立 即 注 册" style="width:140px; height:40px; background-color:#333; border:none; font-size:20px; color:#FFF"/>
+    </div>
+    </center>
+</form>
+</div>
+
+</div>
+
+<div id="footer">
+	<div class="foot1"><br><br><br><p>Paris Fashion Show</p><br><p>客服电话：17784470338</p><br><p>邮箱：2513868605@qq.com</p></div>
+	<div class="foot2">
+    <ul>
+    <li><a>&emsp;友情链接：</a></li>
+    <li><a href="http://www.bazaar.com.cn/" target="_blank">时尚芭莎</a></li>
+    <li><a href="http://www.ilovelook.cn/index.html" target="_blank">LOOK</a></li>
+    <li><a href="http://www.yoka.com/dna/224/845/index.html" target="_blank">YOKA</a></li>
+    <li><a href="http://www.pop-fashion.com/" target="_blank">POP服装趋势</a></li>
+    </ul>
+    <br><p>&emsp;&nbsp;&nbsp;&nbsp;关于PFS：&emsp;&emsp;&emsp;简介&emsp;&emsp;&emsp;发展历程&emsp;&emsp;&emsp;团队&emsp;&emsp;&emsp;合作伙伴</p>
+    <br><p>&emsp;&emsp;商业合作：&emsp;&emsp;品牌合作&emsp;&emsp;&emsp;PFS合作&emsp;&emsp;&emsp;媒体合作</p>
+    </div>
+	<div class="foot3"><br><p>版权所有 © 2019 Paris Fashion Show（巴黎时装秀.个人网站） .YH</p><br><p>ICP 号: 京 A1-20190501(虚拟)</p></div>
+</div>
+</body>
+</html>
